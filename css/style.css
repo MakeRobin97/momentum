@@ -1,0 +1,154 @@
+body {
+  margin:0;
+  text-align: center;
+  position:relative;
+  width:100vw;
+  height:100vh;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.hidden {
+  display:none;
+}
+
+img {
+  position:absolute;
+  height:100%;
+  width:100%;
+  left: 0px;
+  top: 0px;
+  right:0px;
+  bottom:0px;
+  z-index: -1;
+  opacity:80%;
+  margin:auto;
+  object-fit: cover;
+  }
+
+  #clock {
+    color: white;
+    font-size: 140px;
+    position:absolute;
+    margin:0;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #greeting {
+    color:white;
+    font-size: 60px;
+    position:absolute;
+    margin:0;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #quote {
+    color:white;
+    font-size: 20px;
+    position:absolute;
+    margin:0;
+    top: 93%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:80%;
+  }
+
+  #login-form {
+    position:absolute;
+    margin:0;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #login-form input:first-child {
+    height:40px;
+    width:250px;
+    margin-right:10px;
+  }
+
+  #login-form input:last-child {
+    height:48px;
+    background-color: black;
+    color:white;
+    border-radius: 5px;
+    border:none;
+    box-sizing: border-box;
+  }
+
+  #todo-list {
+    background-color: white;
+    color:white;
+    font-size: 20px;
+    position:absolute;
+    margin:0;
+    bottom: 5%;
+    right: 2%;
+    list-style-type: none;
+    padding-left:0;
+    border-radius: 5px;
+  }
+
+  #todo-list li{
+    width: 200px;
+    position: relative;
+    margin-top:5px;
+    margin-bottom:5px;
+  }
+
+  #todo-list span{
+    margin-right:15px;
+    color:black;
+    width:100%;
+  }
+
+  #todo-list button{
+    position: absolute;
+    right:3%;
+    top:4px;
+    background-color: mediumaquamarine;
+    color:white;
+  }
+
+  #weather {
+
+  }
+
+  #weather span:first-child{
+    position:absolute;
+    right:30px;
+    top:10px;
+    font-size:25px;
+    color: white;
+  }
+
+  #weather span:last-child{
+    position:absolute;
+    right:30px;
+    top:50px;
+    font-size:23px;
+    color: white;
+    font-weight:600;
+  }
+
+  #todo-form {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #todo-form input {
+    border:none;
+    background-color: transparent;
+    text-align:center;
+    width:350px;
+    height:30px;
+    font-size:30px;
+    border-bottom:2px solid white;
+    color:white;
+    outline:none;
+  }
