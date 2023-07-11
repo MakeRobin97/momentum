@@ -86,7 +86,7 @@ img {
   }
 
   #todo-list {
-    background-color: white;
+    background-color:white;
     font-size: 20px;
     position:absolute;
     margin:0;
@@ -100,26 +100,29 @@ img {
   }
 
   #todo-list li{
-    width: 200px;
-    position: relative;
+    width: 250px;
     margin-top:5px;
     margin-bottom:5px;
     font-weight:500;
+
   }
 
   #todo-list span{
     margin-right:15px;
     color:black;
-    width:100%;
+    width:190px;
+    display: inline-block;
+
   }
 
   #todo-list input{
-    position: absolute;
-    right:30px;
-    top:5px;
     background-color: mediumaquamarine;
     color:white;
     transform : scale(1.5);
+    margin:0;
+    margin-bottom:10px;
+    position: relative;
+    top: -2px;
   }
 
   #weather span:first-child{
@@ -189,35 +192,29 @@ img {
     }
 
     #todo-list {
-      width:150px;
       right:3%;
       font-size:17px;
     }
 
     #todo-list li {
-      width:100%;
+      width:150px;
       font-size:15px;
     }
+
+    #todo-list span {
+      width:100px;
+    }
+
   }
     @media all and (max-width:480px) {
-      /* body {
-        background-color: pink;
+      body {
         margin:0;
         text-align: center;
         position:relative;
         overflow: hidden;
-        height: 100vh;
-        width: 100vw;
-        overflow: hidden;
+        width:100vw;
+        height:100vh;
       }
-
-      img {
-        position:absolute;
-        width:1000px;
-        height:1001px;
-        margin:0;
-        background-color: blue;
-        } */
 
       #clock {
         font-size:80px;
@@ -243,5 +240,60 @@ img {
         width:250px;
         top:700px;
       }
+
+      img{
+        position:absolute;
+        top: 270px;
+        width:100%;
+        z-index: -1;
+        opacity:80%;
+        margin:0;
+      }
+
+      #todo-list {
+        background-color:white;
+        font-size: 20px;
+        position:absolute;
+        top: 280px;
+        bottom:initial;
+        right: 60px;
+        left: 60px;
+        list-style-type: none;
+        padding-left:0;
+        border-radius: 5px;
+        font-weight:600;
+        z-index:1;
+      }
+    
+      #todo-list li{
+        margin:0;
+
+        width: 100%;
+        margin-top:5px;
+        margin-bottom:5px;
+        font-weight:500;
+        align-items: center;
+        display:flex;
+        justify-content: center;
+      }
+    
+      #todo-list span{
+        margin-right:15px;
+        color:black;
+        width:190px;
+        display: inline-block;
+
+      }
+    
+      #todo-list input{
+        background-color: mediumaquamarine;
+        color:white;
+        transform : scale(1.5);
+        margin:0;
+        margin-bottom:10px;
+        position: relative;
+        top: 4.5px;
+      }
+
 
   }

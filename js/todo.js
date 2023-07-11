@@ -58,11 +58,14 @@ const savedToDos = localStorage.getItem(TODOS_KEY);
 
 // 최소 한번은 저장했을시
 if (savedToDos!==null){
+  console.log('check');
   const parsedToDos = JSON.parse(savedToDos);
   toDos = parsedToDos;
   parsedToDos.forEach(paintToDo);
 }
 
-if((JSON.parse(savedToDos)).length!==0){
-  toDoList.classList.remove('hidden')
+if ((JSON.parse(savedToDos)).length==0){
+  toDoList.classList.add("hidden");
+} else {
+  toDoList.classList.remove("hidden");
 }
