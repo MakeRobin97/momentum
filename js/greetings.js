@@ -8,6 +8,7 @@ const USERNAME_KEY = "username";
 
 function onLoginSubmit(event) {
   event.preventDefault();
+  question.classList.remove("hidden");
   loginForm.classList.add(HIDDEN_CLASSNAME);
   localStorage.setItem(USERNAME_KEY,loginInput.value)
   paintGreetings()
