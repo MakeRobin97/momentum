@@ -1,8 +1,10 @@
 const loginForm = document.querySelector("#login-form")
 const loginInput = document.querySelector("#login-form input");
 const greeting = document.querySelector("#greeting");
+const question = document.querySelector("#question");
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
+
 
 function onLoginSubmit(event) {
   event.preventDefault();
@@ -27,3 +29,9 @@ if(savedUsername === null){
 } else {
   paintGreetings()
 }
+
+const usernameInf = localStorage.getItem(USERNAME_KEY);
+if(usernameInf===null){
+  question.classList.add("hidden");
+} 
+
