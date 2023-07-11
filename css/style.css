@@ -5,8 +5,8 @@ body {
   font-family: 'Noto Sans KR', sans-serif;
   width:100vw;
   height:100vh;
+  background-color: black;
   overflow-x: hidden;
-  overflow-y: hidden;
 }
 
 .hidden {
@@ -15,7 +15,6 @@ body {
 
 img {
   position:absolute;
-  height:100%;
   width:100%;
   left: 0px;
   top: 0px;
@@ -24,7 +23,7 @@ img {
   z-index: -1;
   opacity:80%;
   margin:auto;
-  object-fit: cover;
+
   }
 
   #clock {
@@ -222,27 +221,27 @@ img {
 
       #clock {
         font-size:80px;
-        top:180px;
+        top:120px;
       }
 
       #greeting {
         font-size:50px;
-        top:270px;
+        top:210px;
       }
 
       #question {
         font-size:30px;
         width:270px;
-        top:450px;
+        top:540px;
       }
 
       #todo-form {
-        top:520px;
+        top:620px;
       }
 
       #quote {
         width:250px;
-        top:650px;
+        top:700px;
       }
 
   }
