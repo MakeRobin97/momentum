@@ -63,7 +63,7 @@ img {
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-
+    width:350px;
   }
 
   #login-form input:first-child {
@@ -139,9 +139,6 @@ img {
   }
 
 
-
-
-
   #question{
     position:absolute;
     color:white;
@@ -192,7 +189,7 @@ img {
 
     #todo-list {
       width:150px;
-      right:2%;
+      right:3%;
       font-size:17px;
     }
 
@@ -200,6 +197,24 @@ img {
       width:100%;
       font-size:15px;
     }
+  }
+    @media all and (max-width:480px) {
+      #clock {
+        font-size:80px;
+      }
 
+      #greeting {
+        font-size:50px;
+      }
+
+      #question {
+        font-size:30px;
+        width:270px
+      }
+
+      #quote {
+        width:250px;
+        top:90%;
+      }
 
   }
