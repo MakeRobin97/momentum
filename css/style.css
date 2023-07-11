@@ -199,22 +199,47 @@ img {
     }
   }
     @media all and (max-width:480px) {
+      body {
+        background-color: pink;
+        margin:0;
+        text-align: center;
+        position:relative;
+        width:100vw;
+        height:100vh;
+        overflow: hidden;
+      }
+
+      img {
+        position:absolute;
+        width:100%;
+        height:100%;
+        margin:0;
+        background-color: blue;
+        }
+
       #clock {
         font-size:80px;
+        top:180px;
       }
 
       #greeting {
         font-size:50px;
+        top:270px;
       }
 
       #question {
         font-size:30px;
-        width:270px
+        width:270px;
+        top:450px;
+      }
+
+      #todo-form {
+        top:520px;
       }
 
       #quote {
         width:250px;
-        top:850px;
+        top:650px;
       }
 
   }
