@@ -15,19 +15,23 @@ function deleteToDo(event){
   li.remove();
   toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id));
   saveToDos();
+  if(toDos.length==0){
+    toDoList.classList.add('hidden')
+  }
 }
+
 
 function paintToDo(newTodoObj){
   const li = document.createElement("li");
   li.id = newTodoObj.id
   const span = document.createElement("span");
   span.innerText=newTodoObj.text;
-  const button = document.createElement("button");
-  button.innerText="X";
-  button.addEventListener("click", deleteToDo )
+  const inputBtn = document.createElement("input");
+  inputBtn.type = "checkbox"
+  inputBtn.addEventListener("click", deleteToDo )
   toDoList.appendChild(li);
   li.appendChild(span);
-  li.appendChild(button);
+  li.appendChild(inputBtn);
 }
 
 
@@ -42,6 +46,7 @@ function handleToDoSubmit(event) {
   toDos.push(newTodoObj);
   paintToDo(newTodoObj);
   saveToDos();
+  toDoList.classList.remove('hidden')
 }
 
 toDoForm.addEventListener("submit", handleToDoSubmit  );
@@ -51,9 +56,13 @@ toDoForm.addEventListener("submit", handleToDoSubmit  );
 const savedToDos = localStorage.getItem(TODOS_KEY);
 
 
+// 최소 한번은 저장했을시
 if (savedToDos!==null){
   const parsedToDos = JSON.parse(savedToDos);
   toDos = parsedToDos;
   parsedToDos.forEach(paintToDo);
 }
 
+if((JSON.parse(savedToDos)).length!==0){
+  toDoList.classList.remove('hidden')
+}

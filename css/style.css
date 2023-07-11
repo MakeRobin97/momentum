@@ -36,6 +36,7 @@ img {
   }
 
   #greeting {
+    width:400px;
     color:white;
     font-size: 60px;
     position:absolute;
@@ -62,12 +63,15 @@ img {
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
+
   }
 
   #login-form input:first-child {
     height:40px;
     width:250px;
     margin-right:10px;
+    text-align: center;
+    font-size: 15px;
   }
 
   #login-form input:last-child {
@@ -77,11 +81,11 @@ img {
     border-radius: 5px;
     border:none;
     box-sizing: border-box;
+    cursor: pointer;
   }
 
   #todo-list {
     background-color: white;
-    color:white;
     font-size: 20px;
     position:absolute;
     margin:0;
@@ -90,6 +94,8 @@ img {
     list-style-type: none;
     padding-left:0;
     border-radius: 5px;
+    font-weight:600;
+    z-index:1;
   }
 
   #todo-list li{
@@ -97,6 +103,7 @@ img {
     position: relative;
     margin-top:5px;
     margin-bottom:5px;
+    font-weight:500;
   }
 
   #todo-list span{
@@ -105,12 +112,13 @@ img {
     width:100%;
   }
 
-  #todo-list button{
+  #todo-list input{
     position: absolute;
     right:3%;
-    top:4px;
+    top:5px;
     background-color: mediumaquamarine;
     color:white;
+    transform : scale(1.5);
   }
 
   #weather {
@@ -134,9 +142,23 @@ img {
     font-weight:600;
   }
 
+
+
+
+
+  #question{
+    position:absolute;
+    color:white;
+    font-size:35px;
+    top: 73%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight:500;
+  }
+
   #todo-form {
     position: absolute;
-    top: 65%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -151,4 +173,37 @@ img {
     border-bottom:2px solid white;
     color:white;
     outline:none;
+    padding-bottom:10px;
+  }
+
+
+  @media all and (max-width:1600px) {
+    #quote{
+      width:40%;
+    }
+  } 
+
+  /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/ 
+  @media all and (min-width:768px) and (max-width:1023px) {
+    ...
+  } 
+
+  /* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/ 
+  @media all and (max-width:767px) {
+    #quote{
+      font-size: 15px;
+    }
+
+    #todo-list {
+      width:150px;
+      right:2%;
+      font-size:17px;
+    }
+
+    #todo-list li {
+      width:100%;
+      font-size:15px;
+    }
+
+
   }
