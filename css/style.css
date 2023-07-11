@@ -30,7 +30,7 @@ img {
     font-size: 140px;
     position:absolute;
     margin:0;
-    top: 40%;
+    top: 400px;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -41,7 +41,7 @@ img {
     font-size: 60px;
     position:absolute;
     margin:0;
-    top: 55%;
+    top: 550px;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -51,7 +51,7 @@ img {
     font-size: 20px;
     position:absolute;
     margin:0;
-    top: 93%;
+    top: 880px;
     left: 50%;
     transform: translate(-50%, -50%);
     width:80%;
@@ -60,7 +60,7 @@ img {
   #login-form {
     position:absolute;
     margin:0;
-    top: 55%;
+    top: 550px;
     left: 50%;
     transform: translate(-50%, -50%);
     width:350px;
@@ -89,8 +89,8 @@ img {
     font-size: 20px;
     position:absolute;
     margin:0;
-    bottom: 5%;
-    right: 2%;
+    bottom: 50px;
+    right: 20px;
     list-style-type: none;
     padding-left:0;
     border-radius: 5px;
@@ -114,7 +114,7 @@ img {
 
   #todo-list input{
     position: absolute;
-    right:3%;
+    right:30px;
     top:5px;
     background-color: mediumaquamarine;
     color:white;
@@ -143,7 +143,7 @@ img {
     position:absolute;
     color:white;
     font-size:35px;
-    top: 73%;
+    top: 700px;
     left: 50%;
     transform: translate(-50%, -50%);
     font-weight:500;
@@ -151,7 +151,7 @@ img {
 
   #todo-form {
     position: absolute;
-    top: 80%;
+    top: 780px;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -214,7 +214,7 @@ img {
 
       #quote {
         width:250px;
-        top:90%;
+        top:850px;
       }
 
   }
